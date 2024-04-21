@@ -1,0 +1,128 @@
+<nav class='colorbackground' aria-label="breadcrumb">
+    <ol class="colorbackground breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Visualização de Locação</li>
+    </ol>
+</nav>
+
+<h5 class='col-md-12'>Dados de Locação</h5>
+<br>
+
+<form>
+    <div class="form-group col-md-3">
+        <label for="inputId">Cód registro</label>
+        <input type="text" class='form-control' id='inputId' aria-label="Código de registro" [value]='CodRegistro' disabled>
+    </div>
+
+    <div class="form-group col-md-12">
+        <label for="inputNomeLocatario">Nome do Locatário</label>
+        <input type="text" class='form-control' id='inputNomeLocatario' arial-label='Nome do Locatário' [value]="NomeLocatario" disabled>
+    </div>
+
+    <div class="form-group col-md-12">
+        <label for="inputNomeLocador">Nome do Locador</label>
+        <input type="text" class='form-control' id='inputNomeLocador' arial-label='Nome do Locador' [value]="NomeLocador" disabled>
+    </div>
+
+    <div class="form-group col-md-12">
+        <label for='inputEnderecoCompleto'>Endereço Completo</label>
+        <input type='email' class='form-control' id='inputEnderecoCompleto' arial-label='Endereço Completo' [value]="EnderecoCompleto" disabled>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-6'>
+            <label for='inputValor'>Valor</label>
+            <input type="text" class="form-control" id="inputValor" [value]="Valor" disabled>
+        </div>
+
+        <div class='form-group col-md-6'>
+            <label for='inputGarantia'>Garantia</label>
+            <input type="number" class="form-control" id="inputGarantia" [value]="Garantia" disabled>
+        </div>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-6'>
+            <label for='inputInicial'>Prazo Inicial</label>
+            <input type="text" class="form-control" id="inputInicial" [value]="PrazoInicial" disabled>
+        </div>
+
+        <div class='form-group col-md-6'>
+            <label for='inputFinal'>Prazo Final</label>
+            <input type="text" class="form-control" id="inputGarantia" [value]="PrazoFinal" disabled>
+        </div>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-6'>
+            <label for='inputIptu'>Iptu</label>
+            <input type="text" class="form-control" id="inputIptu" [value]="ValorIptu" disabled>
+        </div>
+
+        <div class='form-group col-md-6'>
+            <label for='inputCondominio'>Condomínio</label>
+            <input type="text" class="form-control" id="inputCondominio" [value]="ValorCondominio" disabled>
+        </div>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-4'>
+            <label for='inputAgua'>Água</label>
+            <input type="text" class="form-control" id="inputAgua" [value]="TipoAgua" disabled>
+        </div>
+
+        <div class='form-group col-md-4'>
+            <label for='inputLuz'>Luz</label>
+            <input type="text" class="form-control" id="inputLuz" [value]="TipoLuz" disabled>
+        </div>
+
+        <div class='form-group col-md-4'>
+            <label for='inputGas'>Gás</label>
+            <input type="text" class="form-control" id="inputGas" [value]="ValorGas" disabled>
+        </div>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-4'>
+            <label for='inputDescontoValor'>Desconto Valor</label>
+            <input type="text" class="form-control" id="inputDescontoValor" [value]="ValorDesconto" disabled>
+        </div>
+
+        <div class='form-group col-md-4'>
+            <label for='inputDescontoTempo'>Desconto Tempo</label>
+            <input type="text" class="form-control" id="inputDescontoTempo" [value]="TempoDesconto" disabled>
+        </div>
+
+        <div class='form-group col-md-4'>
+            <label for='inputReajuste'>Reajuste</label>
+            <input type="text" class="form-control" id="inputReajuste" [value]="Reajuste" disabled>
+        </div>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-3'>
+            <label for='inputValorAluguel'>Valor Aluguel</label>
+            <input type="text" class="form-control" id="inputValorAluguel" [value]="ValorAluguel" disabled>
+        </div>
+
+        <div class='form-group col-md-3'>
+            <label for='inputDataPagamento'>Data Pagamento</label>
+            <input type="text" class="form-control" id="inputDataPagamento" [value]="DataPagamento" disabled>
+        </div>
+
+        <div class='form-group col-md-3'>
+            <label for='inputMulta'>Multa de Atraso</label>
+            <input type="number" class="form-control" id="inputMulta" [value]="PorcentagemMulta" disabled>
+        </div>
+
+        <div class='form-group col-md-3'>
+            <label for='inputIsencaoMulta'>Isenção Multa</label>
+            <input type="text" class="form-control" id="inputIsencaoMulta" [value]="QuantoIsencaoMulta" disabled>
+        </div>
+    </div>
+
+    <div class='col-md-12'>
+        <button type="submit" class="btn btn-success col-md-1">Salvar</button>
+        <button class="btn btn-primary ml-2 col-md-1" [routerLink]="['/ListarLocacoes']">Cancelar</button>
+    </div>
+</form>

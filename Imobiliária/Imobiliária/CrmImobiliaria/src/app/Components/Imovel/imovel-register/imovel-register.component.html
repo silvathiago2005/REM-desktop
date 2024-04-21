@@ -1,0 +1,118 @@
+<nav class='colorbackground' aria-label="breadcrumb">
+    <ol class="colorbackground breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cadastro de Imóvel</li>
+    </ol>
+</nav>
+
+<h5 class='col-md-12'>Cadastro de Imóvel</h5>
+<br>
+
+<form>
+    <div class="form-group col-md-4">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Locação
+              </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Venda
+              </label>
+        </div>
+    </div>
+
+    <div class="form-row col-md-12">
+        <div class="form-group col-md-6">
+            <label for="inputTipo">Tipo</label>
+            <input type="text" class='form-control' id='inputNome' arial-label='Tipo de Imóvel'>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputMetragem">Metragem</label>
+            <input type="text" class="form-control" id='inputTipo' arial-label='Metragem do Imóvel'>
+        </div>  
+    </div>
+
+    <div class="form-group col-md-12">
+        <label for='inputEndereço'>Endereço</label>
+        <input type='email' class='form-control' id='inputEndereço' arial-label='Endereço Imóvel'>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-6'>
+            <label for='inputCity'>Cidade</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class='form-group col-md-4'>
+            <label for='inputBrootherhood'>Bairro</label>
+            <input type="text" class="form-control" id="inputBrootherhood">
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputCEP">CEP</label>
+            <input type="text" class="form-control" id="inputCEP">
+        </div>
+    </div>
+
+    <div class="form-row col-md-12">
+        <div class='form-group col-md-3'>
+            <label for='inputDormitorios'>Dormitórios</label>
+            <input type="number" class="form-control" id="inputDormitorios">
+        </div>
+
+        <div class='form-group col-md-3'>
+            <label for='inputSuites'>Suítes</label>
+            <input type="number" class="form-control" id="inputSuites">
+        </div>
+
+        <div class='form-group col-md-3'>
+            <label for='inputBanheiro'>Banheiro(s)</label>
+            <input type="number" class="form-control" id="inputBanheiro">
+        </div>
+
+        <div class='form-group col-md-3'>
+            <label for='inputGaragem'>Garagem</label>
+            <input type="number" class="form-control" id="inputGaragem">
+        </div>
+    </div>
+
+    <div class="form-row col-md-12">
+        <div class='form-group col-md-3'>
+            <label for='inputJantar'>Sala de Jantar</label>
+            <input type="number" class="form-control" id="inputJantar">
+        </div>
+
+        <div class='form-group col-md-3'>
+            <label for='inputEstar'>Sala de Estar</label>
+            <input type="number" class="form-control" id="inputEstar">
+        </div>
+
+        <div class='form-group col-md-3'>
+            <label for='inputServico'>Area de Serviço</label>
+            <input type="number" class="form-control" id="inputServico">
+        </div>
+
+        <div class='form-group col-md-3'>
+            <label for='inputCobertura'>Cobertura</label>
+            <input type="number" class="form-control" id="inputCobertura">
+        </div>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-6'>
+            <label for='inputValorVenda'>Valor de Venda</label>
+            <input type="text" class="form-control" id="inputValorVenda">
+        </div>
+
+        <div class='form-group col-md-6'>
+            <label for='inputValorAluguel'>Valor de Aluguel</label>
+            <input type="text" class="form-control" id="inputValorAluguel">
+        </div>
+    </div>
+
+    <div class='col-md-12'>
+        <button type="submit" class="btn btn-success col-md-1">Salvar</button>
+        <button class="btn btn-primary ml-2 col-md-1" [routerLink]="['/ListarImoveis']">Cancelar</button>
+    </div>
+</form>

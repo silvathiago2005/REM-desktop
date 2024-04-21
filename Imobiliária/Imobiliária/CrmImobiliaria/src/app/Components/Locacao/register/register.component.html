@@ -1,0 +1,145 @@
+<nav class='colorbackground' aria-label="breadcrumb">
+    <ol class="colorbackground breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Visualização de Locação</li>
+    </ol>
+</nav>
+
+<h5 class='col-md-12'>Dados de Locação</h5>
+<br>
+
+<form>
+    <div class="form-group col-md-12">
+        <label for="inputNomeLocatario">Nome do Locatário</label>
+        <select class="form-select col-md-12 form-control" aria-label="Default select Exemple">
+            <option selected></option>
+            <option value="1">Amarilho Pereira da Rosa</option>
+            <option value="2">Pastor Fábio</option>
+            <option value="3">Miguel Zanichelli Lopes da Silva</option>
+        </select>
+    </div>
+
+    <div class="form-group col-md-12">
+        <label for="inputNomeLocador">Nome do Locador</label>
+        <select class="form-select col-md-12 form-control" aria-label="Default select Exemple">
+            <option selected></option>
+            <option value="1">Thiago Lopes da Silva</option>
+            <option value="2">José das neves</option>
+            <option value="3">Saul Hudson</option>
+            <option value="4">Joe Satriani</option>
+        </select>
+    </div>
+    
+    <div class="form-group col-md-12">
+        <label for="inputNomeLocador">Endereço do Imóvel</label>
+        <select class="form-select col-md-12 form-control" aria-label="Default select Exemple">
+            <option selected></option>
+            <option value="1">Rua Julio de Mesquita Filho 184</option>
+            <option value="2">Av Queiróz Filho 84</option>
+        </select>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-6'>
+            <label for='inputValor'>Valor</label>
+            <input type="text" class="form-control" id="inputValor">
+        </div>
+
+        <div class='form-group col-md-6'>
+            <label for='inputGarantia'>Garantia</label>
+            <input type="number" class="form-control" id="inputGarantia">
+        </div>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-6'>
+            <label for='inputInicial'>Prazo Inicial</label>
+            <input type="date" class="form-control" id="inputInicial">
+        </div>
+
+        <div class='form-group col-md-6'>
+            <label for='inputFinal'>Prazo Final (Meses)</label>
+            <input type="number" class="form-control" id="inputGarantia">
+        </div>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-6'>
+            <label for='inputIptu'>Iptu</label>
+            <input type="text" class="form-control" id="inputIptu">
+        </div>
+
+        <div class='form-group col-md-6'>
+            <label for='inputCondominio'>Condomínio</label>
+            <input type="text" class="form-control" id="inputCondominio">
+        </div>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class="form-group col-md-4">
+            <label for="inputAgua">Água</label>
+            <select class="form-select col-md-12 form-control" aria-label="Default select Exemple">
+                <option value="1">Individual</option>
+                <option value="2">Dividido</option>
+            </select>
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="inputAgua">Luz</label>
+            <select class="form-select col-md-12 form-control" aria-label="Default select Exemple">
+                <option value="1">Individual</option>
+                <option value="2">Dividido</option>
+            </select>
+        </div>
+
+        <div class='form-group col-md-4'>
+            <label for='inputGas'>Gás</label>
+            <input type="text" class="form-control" id="inputGas">
+        </div>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-4'>
+            <label for='inputDescontoValor'>Desconto Valor</label>
+            <input type="text" class="form-control" id="inputDescontoValor">
+        </div>
+
+        <div class='form-group col-md-4'>
+            <label for='inputDescontoTempo'>Desconto Tempo</label>
+            <input type="number" class="form-control" id="inputDescontoTempo">
+        </div>
+
+        <div class='form-group col-md-4'>
+            <label for='inputReajuste'>Reajuste</label>
+            <input type="number" class="form-control" id="inputReajuste">
+        </div>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-3'>
+            <label for='inputValorAluguel'>Valor Aluguel</label>
+            <input type="text" class="form-control" id="inputValorAluguel">
+        </div>
+
+        <div class='form-group col-md-3'>
+            <label for='inputDataPagamento'>Data Pagamento</label>
+            <input type="date" class="form-control" id="inputDataPagamento">
+        </div>
+
+        <div class='form-group col-md-3'>
+            <label for='inputMulta'>Multa de Atraso</label>
+            <input type="number" class="form-control" id="inputMulta">
+        </div>
+
+        <div class='form-group col-md-3'>
+            <label for='inputIsencaoMulta'>Isenção Multa</label>
+            <input type="number" class="form-control" id="inputIsencaoMulta">
+        </div>
+    </div>
+
+    <div class='col-md-12'>
+        <button type="submit" class="btn btn-success col-md-1">Salvar</button>
+        <button class="btn btn-primary ml-2 col-md-1" [routerLink]="['/ListarLocacoes']">Cancelar</button>
+    </div>
+
+</form>

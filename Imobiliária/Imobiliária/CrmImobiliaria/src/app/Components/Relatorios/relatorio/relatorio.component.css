@@ -1,0 +1,8 @@
+.colorbackground{
+    background-color: white!important;
+    font-size: 12px;
+}
+
+.dropdown-toggle::after {
+    display:none;
+}

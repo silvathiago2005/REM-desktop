@@ -1,0 +1,59 @@
+<nav class='colorbackground' aria-label="breadcrumb">
+    <ol class="colorbackground breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cadastro de Locador</li>
+    </ol>
+</nav>
+
+<h5 class='col-md-12'>Cadastro de Locador</h5>
+<br>
+
+<form>
+    <div class="form-group col-md-12">
+        <label for="inputNome">Nome</label>
+        <input type="text" class='form-control' id='inputNome' arial-label='Nome do Locador'>
+    </div>
+
+    <div class="form-group col-md-12">
+        <label for='inputEmail'>Email</label>
+        <input type='email' class='form-control' id='inputEmail' arial-label='Email do Locador'>
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-6'>
+            <label for='inputTelefone1'>Telefone Fixo</label>
+            <input type="tel" class="form-control" id="inputTelefone1">
+        </div>
+
+        <div class='form-group col-md-6'>
+            <label for='inputTelefone2'>Celular</label>
+            <input type="tel" class="form-control" id="inputTelefone2">
+        </div>
+    </div>
+
+    <div class="form-group col-md-12">
+        <label for='inputAddress'>Endereço</label>
+        <input type="text" class="form-control" id="inputAddress">
+    </div>
+
+    <div class='form-row col-md-12'>
+        <div class='form-group col-md-6'>
+            <label for='inputCity'>Cidade</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class='form-group col-md-4'>
+            <label for='inputBrootherhood'>Bairro</label>
+            <input type="text" class="form-control" id="inputBrootherhood">
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputCEP">CEP</label>
+            <input type="text" class="form-control" id="inputCEP">
+        </div>
+    </div>
+
+    <div class='col-md-12'>
+        <button type="submit" class="btn btn-success col-md-1">Salvar</button>
+        <button class="btn btn-primary ml-2 col-md-1" [routerLink]="['/ListarLocador']">Cancelar</button>
+    </div>
+
+</form>

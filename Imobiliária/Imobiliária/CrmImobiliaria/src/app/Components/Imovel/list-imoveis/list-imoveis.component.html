@@ -1,0 +1,75 @@
+<nav class='colorbackground' aria-label="breadcrumb">
+    <ol class="colorbackground breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Listar Imóveis</li>
+    </ol>
+</nav>
+
+<h5 class='col-md-12'>Lista de Imóveis</h5>
+<br>
+
+<div class='table-responsive col-md-12'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Cód registro</th>
+                <th>Endereço</th>
+                <th>Tipo</th>
+                <th>Venda/Locação</th>
+                <th>Valor</th>
+                <th>Metragem</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Rua aurora, Santo André</td>
+                <td>Apartamento</td>
+                <td>Venda</td>
+                <td>130.000,00</td>
+                <td>130</td>
+                <td class='text-center' ngbDropdown>
+                    <a id="dropdownOption" ngbDropdownToggle style='color: black'><i class='fa fa-ellipsis-v'></i></a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownOption">
+                        <a class="dropdown-item" [routerLink]="['/VisualizarImovel']">Visualizar</a>
+                        <a class="dropdown-item" [routerLink]="['/RegistrarImovel']">Editar</a>
+                        <a class="dropdown-item" href="#">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Rua Camargo 134, São Bernardo Do Campo</td>
+                <td>Apartamento</td>
+                <td>Aluguel</td>
+                <td>890,00</td>
+                <td>45</td>
+                <td class='text-center' ngbDropdown>
+                    <a id="dropdownOption" ngbDropdownToggle style='color: black'><i class='fa fa-ellipsis-v'></i></a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownOption">
+                        <a class="dropdown-item" [routerLink]="['/VisualizarImovel']">Visualizar</a>
+                        <a class="dropdown-item" [routerLink]="['/RegistrarImovel']">Editar</a>
+                        <a class="dropdown-item" href="#">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Av Queiroz filho 184, Santo André</td>
+                <td>Galpão</td>
+                <td>Venda</td>
+                <td>1.300.000,00</td>
+                <td>450</td>
+                <td class='text-center' ngbDropdown>
+                    <a id="dropdownOption" ngbDropdownToggle style='color: black'><i class='fa fa-ellipsis-v'></i></a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownOption">
+                        <a class="dropdown-item" [routerLink]="['/VisualizarImovel']">Visualizar</a>
+                        <a class="dropdown-item" [routerLink]="['/RegistrarImovel']">Editar</a>
+                        <a class="dropdown-item" href="#">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

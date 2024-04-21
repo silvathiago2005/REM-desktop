@@ -1,0 +1,35 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "Profiles" (
+	"id" INTEGER NOT NULL,
+	"description" TEXT(50) NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+CREATE TABLE IF NOT EXISTS “Enterprises” (
+	”id” INTEGER NOT NULL,
+	”description” TEXT(50) NOT NULL,
+	”actived” BOOLEAN,
+	”date_created” DATE,
+	”date_edited” DATE,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+CREATE TABLE IF NOT EXISTS "Users" (
+	"id" INTEGER NOT NULL,
+	"name" TEXT(100) NOT NULL,
+	"username" TEXT(50) NOT NULL,
+	"password" TEXT(50) NOT NULL,
+	"idProfile"	INTEGER NOT NULL,
+	”actived” BOOLEAN,
+	”date_created” DATE,
+	”date_edited” DATE,
+	FOREIGN KEY("idProfile") REFERENCES "Profiles"("id"),
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+CREATE TABLE IF NOT EXISTS “Enterprise_users”(
+	”id” INTEGER NOT NULL,
+	”idEnterprise” INTEGER,
+	”idUser” INTEGER,
+	FOREIGN KEY(”idEnterpreise”) REFERENCES “Enterprises”(”id”),
+	FOREIGN KEY(”idUser”) REFERENCES “Users”(”id”),
+	PRIMARY KEY(”id” AUTOINCREMENT)
+);
+COMMIT;

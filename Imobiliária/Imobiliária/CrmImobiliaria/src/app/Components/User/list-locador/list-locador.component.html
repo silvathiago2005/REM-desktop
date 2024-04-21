@@ -1,0 +1,102 @@
+<nav class='colorbackground' aria-label="breadcrumb">
+    <ol class="colorbackground breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Listar Locador</li>
+    </ol>
+</nav>
+
+<h5 class='col-md-12'>Lista de Locadores</h5>
+<br>
+
+<div class="col-md-12">
+    <a role="button" class="btn btn-success btn-lg col-md-2" href="RegistrarLocador">
+        Cadastrar
+    </a>
+</div>
+
+<div class='table-responsive col-md-12'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Cód registro</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Cidade</th>
+                <th>Bairro</th>
+                <th>Contrato</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Thiago Lopes da Silva</td>
+                <td>silvathiago@email.com.br</td>
+                <td>11-989537557</td>
+                <td>Santo André</td>
+                <td>Parque Gerassi</td>
+                <td>Sim</td>
+                <td class='text-center' ngbDropdown>
+                    <a id="dropdownOption" ngbDropdownToggle style='color: black'><i class='fa fa-ellipsis-v'></i></a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownOption">
+                        <a class="dropdown-item" [routerLink]="['/VisualizarLocador']">Visualizar</a>
+                        <a class="dropdown-item" [routerLink]="['/VisualizarLocador']">Editar</a>
+                        <a class="dropdown-item" [routerLink]="['/']">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>José das neves</td>
+                <td>Jose.neves@gmail.com.br</td>
+                <td>11-912344321</td>
+                <td>São Bernardo</td>
+                <td>Paulicéia</td>
+                <td>Não</td>
+                <td class='text-center' ngbDropdown>
+                    <a id="dropdownOption" ngbDropdownToggle style='color: black'><i class='fa fa-ellipsis-v'></i></a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownOption">
+                        <a class="dropdown-item" [routerLink]="['/VisualizarLocador']">Visualizar</a>
+                        <a class="dropdown-item" [routerLink]="['/VisualizarLocador']">Editar</a>
+                        <a class="dropdown-item" href="#">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Saul Hudson</td>
+                <td>slashGuns@gunsandroses.com.br</td>
+                <td>11-912341234</td>
+                <td>Mauá</td>
+                <td>Centro</td>
+                <td>Sim</td>
+                <td class='text-center' ngbDropdown>
+                    <a id="dropdownOption" ngbDropdownToggle style='color: black'><i class='fa fa-ellipsis-v'></i></a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownOption">
+                        <a class="dropdown-item" [routerLink]="['/VisualizarLocador']">Visualizar</a>
+                        <a class="dropdown-item" [routerLink]="['/VisualizarLocador']">Editar</a>
+                        <a class="dropdown-item" href="#">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Joe Satriani</td>
+                <td>joeSatriani@carreirasolo.com.br</td>
+                <td>11-900101000</td>
+                <td>São Caetano</td>
+                <td>Jardim Paula</td>
+                <td>Sim</td>
+                <td class='text-center' ngbDropdown>
+                    <a id="dropdownOption" ngbDropdownToggle style='color: black'><i class='fa fa-ellipsis-v'></i></a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownOption">
+                        <a class="dropdown-item" [routerLink]="['/VisualizarLocador']">Visualizar</a>
+                        <a class="dropdown-item" [routerLink]="['/VisualizarLocador']">Editar</a>
+                        <a class="dropdown-item" href="#">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

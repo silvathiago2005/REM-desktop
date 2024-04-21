@@ -1,0 +1,51 @@
+<nav class='colorbackground' aria-label="breadcrumb">
+    <ol class="colorbackground breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="['']">Home</a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['Relatorios']">Relatorios</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Relatorio</li>
+    </ol>
+</nav>
+
+<h5 class='col-md-12'>Visualização do Relatório</h5>
+<br>
+
+<div id="print-section" class="table-responsive col-md-12">
+    <table class="table">
+        <thead>
+            <tr class="text-center">
+                <th>Cód Locação</th>
+                <th>Data</th>
+                <th>Valor do Aluguel</th>
+                <th>Porcentagem do reajuste</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="text-center">
+                <td>001</td>
+                <td>15/08/2021</td>
+                <td>1.300,00</td>
+                <td>12 %</td>
+            </tr>
+            <tr class="text-center">
+                <td>002</td>
+                <td>01/08/2021</td>
+                <td>1.000,00</td>
+                <td>15 %</td>
+            </tr>
+            <tr class="text-center">
+                <td>003</td>
+                <td>30/08/2021</td>
+                <td>1.500,00</td>
+                <td>10 %</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="row col-md-12">
+    <button class="btn-success col-md-2 ml-3" 
+            [printStyle]="{tr : {'text-align': 'center', 'margin-left': '20px'}}" 
+            printSectionId="print-section" 
+            ngxPrint>Imprimir
+    </button>
+</div>

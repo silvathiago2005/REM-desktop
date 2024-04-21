@@ -1,0 +1,83 @@
+<nav class='colorbackground' aria-label="breadcrumb">
+    <ol class="colorbackground breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Listar Locatário</li>
+    </ol>
+</nav>
+
+<h5 class='col-md-12'>Lista de Locatários</h5>
+<br>
+
+<div class='table-responsive col-md-12'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Cód registro</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Cidade</th>
+                <th>Bairro</th>
+                <th>Contrato</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Thiago Lopes da Silva</td>
+                <td>silvathiago@email.com.br</td>
+                <td>11-989537557</td>
+                <td>Santo André</td>
+                <td>Parque Gerassi</td>
+                <td>Sim</td>
+                <td class='text-center' ngbDropdown>
+                    <a id="dropdownOption" ngbDropdownToggle style='color: black'><i class='fa fa-ellipsis-v'></i></a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownOption">
+                        <a class="dropdown-item" href="#">Visualizar</a>
+                        <a class="dropdown-item" href="#">Editar</a>
+                        <a class="dropdown-item" href="#">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>José das neves</td>
+                <td>Jose.neves@gmail.com.br</td>
+                <td>11-912344321</td>
+                <td>São Bernardo</td>
+                <td>Paulicéia</td>
+                <td>Não</td>
+                <td class='text-center' ngbDropdown>
+                    <a id="dropdownOption" ngbDropdownToggle style='color: black'><i class='fa fa-ellipsis-v'></i></a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownOption">
+                        <a class="dropdown-item" href="#">Visualizar</a>
+                        <a class="dropdown-item" href="#">Editar</a>
+                        <a class="dropdown-item" href="#">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Saul Hudson</td>
+                <td>slashGuns@gunsandroses.com.br</td>
+                <td>11-912341234</td>
+                <td>Mauá</td>
+                <td>Centro</td>
+                <td>Sim</td>
+                <td class='text-center' ngbDropdown>
+                    <a id="dropdownOption" ngbDropdownToggle style='color: black'><i class='fa fa-ellipsis-v'></i></a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownOption">
+                        <a class="dropdown-item" href="#">Visualizar</a>
+                        <a class="dropdown-item" href="#">Editar</a>
+                        <a class="dropdown-item" href="#">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<style>
+
+</style>
